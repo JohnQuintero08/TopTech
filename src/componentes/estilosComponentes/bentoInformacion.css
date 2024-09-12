@@ -1,0 +1,44 @@
+.item-ia {
+  grid-area: prim;
+}
+.item-ib {
+  grid-area: segn;
+}
+.item-ic {
+  grid-area: terc;
+}
+.item-id {
+  grid-area: cuar;
+}
+.item-ie {
+  grid-area: quin;
+}
+.item-if {
+  grid-area: sext;
+}
+.item-ig {
+  grid-area: sept;
+}
+.contenedor-bento-informacion {
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "prim prim terc"
+    "segn segn terc"
+    "cuar cuar cuar"
+    "quin sext sext"
+    "sept sept sept";
+  gap: 1rem;
+}
+@media (min-width: 760px) {
+  .contenedor-bento-informacion {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "prim terc terc terc segn"
+      "cuar cuar quin sext sept";
+    gap: 2rem;
+  }
+}

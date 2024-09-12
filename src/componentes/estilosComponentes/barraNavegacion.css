@@ -1,0 +1,62 @@
+/* CONTENEDORES */
+.contenedor-menu,
+.contendor-opciones {
+  padding: var(--padding-uno);
+  display: flex;
+}
+.contenedor-menu {
+  align-items: center;
+  justify-content: space-between;
+}
+.contenedor-opciones-cerrado {
+  height: 0;
+  overflow: hidden;
+}
+.contendor-opciones {
+  flex-direction: column;
+  gap: 1rem;
+}
+/* BOTONES */
+.link-activo {
+  background-color: var(--gris);
+}
+/* TEXTO */
+.link-navegacion {
+  text-decoration: none;
+  color: var(--negro);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radioBorde-uno);
+}
+/* ICONOS */
+.icono {
+  width: 2rem;
+  height: 2rem;
+}
+/* IMAGENES */
+.logo-toptech {
+  width: 120px;
+}
+/* MEDIA QUERIES */
+@media (min-width: 760px) {
+  .boton-icono-menu {
+    display: none;
+  }
+  .contendor-opciones,
+  .contenedor-opciones-cerrado {
+    padding: var(--padding-uno);
+    flex-direction: row;
+    gap: 2rem;
+    /* border: 1px solid black; */
+  }
+  .contenedor-opciones-cerrado {
+    display: flex;
+    height: max-content;
+  }
+  .link-activo {
+    background-color: var(--blanco);
+    text-decoration: underline;
+  }
+  .link-navegacion {
+    padding: 0;
+  }
+}

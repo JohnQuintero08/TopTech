@@ -1,0 +1,44 @@
+/* CONTENEDORES */
+.contenedor-footer,
+.contenedor-footer-legal,
+.contenedor-footer-contacto {
+  display: flex;
+}
+.contenedor-footer-contacto,
+.contenedor-footer {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.contenedor-footer-legal {
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+/* ANCHOR TAGS */
+.contenedor-footer-legal a {
+  cursor: pointer;
+  font-size: 0.7rem;
+  /* border: 1px solid black; */
+}
+/* IMAGENES */
+.logo-footer-toptech {
+  width: 300px;
+}
+@media (min-width: 760px) {
+  .contenedor-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contenedor-footer-contacto {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .contenedor-footer-legal {
+    gap: 3rem;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}

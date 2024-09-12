@@ -1,0 +1,38 @@
+.contenedor-tarjetas-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  /*   border: 1px solid black; */
+}
+.contenedor-general-tarjeta-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 550px) {
+  .item-a {
+    grid-area: prim;
+  }
+  .item-b {
+    grid-area: segn;
+  }
+  .item-c {
+    grid-area: terc;
+  }
+  .contenedor-tarjetas-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "prim terc"
+      "segn terc";
+  }
+}
+@media (min-width: 760px) {
+  .contenedor-tarjetas-servicios {
+    gap: 2rem;
+  }
+}
