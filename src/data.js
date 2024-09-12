@@ -91,6 +91,47 @@ const data = {
       textoBoton: "Ver mas",
     },
   ],
+  servicios: [
+    {
+      id: 1,
+      clase: "item-a",
+      titulo: "Desarrollo Web",
+      descripcion: "Creación y mantenimiento de sitios web personalizados.",
+    },
+    {
+      id: 2,
+      clase: "item-b",
+      titulo: "Consultoría IT",
+      descripcion:
+        "Asesoría en soluciones tecnológicas y estrategias digitales.",
+    },
+    {
+      id: 3,
+      clase: "item-c",
+      titulo: "Soporte Técnico",
+      descripcion:
+        "Resolución de problemas y mantenimiento de sistemas informáticos.",
+    },
+    {
+      id: 4,
+      clase: "item-d",
+      titulo: "Desarrollo de Software",
+      descripcion: "Creación de aplicaciones y sistemas a medida.",
+    },
+    {
+      id: 5,
+      clase: "item-e",
+      titulo: "Seguridad Informática",
+      descripcion: "Protección de datos y redes contra amenazas cibernéticas.",
+    },
+    {
+      id: 6,
+      clase: "item-f",
+      titulo: "Automatización de Procesos",
+      descripcion:
+        "Optimización de flujos de trabajo mediante herramientas tecnológicas.",
+    },
+  ],
 };
 
 export default data;

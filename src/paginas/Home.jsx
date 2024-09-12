@@ -26,7 +26,9 @@ export default function Home() {
       </section>
 
       <section className="seccion-servicios">
-        <TarjetasServicios></TarjetasServicios>
+        <TarjetasServicios
+          servicios={data.servicios.slice(0, 3)}
+        ></TarjetasServicios>
       </section>
 
       <section className="seccion-informacion">

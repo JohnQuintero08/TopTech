@@ -4,7 +4,10 @@ import Footer from "../componentes/Footer";
 export default function Servicios() {
   return (
     <>
-      <p>Servicios aca</p>
+      <div>
+        <h2>Ofrecemos servicios se calibración y otros</h2>
+      </div>
+
       <Footer></Footer>
     </>
   );
