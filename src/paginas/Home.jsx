@@ -28,6 +28,8 @@ export default function Home() {
       <section className="seccion-servicios">
         <TarjetasServicios
           servicios={data.servicios.slice(0, 3)}
+          hasBoton={true}
+          claseServicios="primera"
         ></TarjetasServicios>
       </section>
 

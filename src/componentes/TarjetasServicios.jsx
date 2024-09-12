@@ -4,7 +4,11 @@ import "./estilosComponentes/TarjetasServicios.css";
 import BotonGeneral from "./BotonGeneral";
 import { NavLink } from "react-router-dom";
 
-export default function TarjetasServicios({ servicios }) {
+export default function TarjetasServicios({
+  servicios,
+  hasBoton,
+  claseServicios,
+}) {
   const tarjetas = servicios.map((servicio) => {
     const { id, titulo, descripcion, clase } = servicio;
     return (
@@ -19,10 +23,16 @@ export default function TarjetasServicios({ servicios }) {
   });
   return (
     <div className="contenedor-general-tarjeta-servicios">
-      <div className="contenedor-tarjetas-servicios">{tarjetas}</div>
-      <NavLink to="servicios">
-        <BotonGeneral className="boton">Conoce nuestros servicios</BotonGeneral>
-      </NavLink>
+      <div className={`contenedor-tarjetas-servicios ${claseServicios}`}>
+        {tarjetas}
+      </div>
+      {hasBoton && (
+        <NavLink to="servicios">
+          <BotonGeneral className="boton">
+            Conoce nuestros servicios
+          </BotonGeneral>
+        </NavLink>
+      )}
     </div>
   );
 }

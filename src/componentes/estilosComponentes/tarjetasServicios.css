@@ -22,13 +22,29 @@
   .item-c {
     grid-area: terc;
   }
+  .item-d {
+    grid-area: cuar;
+  }
+  .item-e {
+    grid-area: quin;
+  }
+  .item-f {
+    grid-area: sext;
+  }
   .contenedor-tarjetas-servicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .primera {
     grid-template-areas:
       "prim terc"
       "segn terc";
+  }
+  .segunda {
+    grid-template-areas:
+      "cuar quin"
+      "cuar sext";
   }
 }
 @media (min-width: 760px) {
