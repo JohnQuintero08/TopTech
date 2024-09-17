@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   /* Color de fondo general de la pagina */
-  background-color: var(--blanco);
+  background-color: var(--blanco-uno);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,11 +17,20 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Definición de las variables de la paleta de colores, paddings y margenes */
+  --gris-uno: #e7e7e7;
+  --gris-dos: #b0acac;
+  --gris-tres: #9d9d9d;
+  --blanco-uno: #ffffff;
+  --azul-uno: #2b4554;
+  --azul-dos: #243a47;
+  --azul-tres: #142630;
+  --azul-cuatro: #031921;
+  --rojo: #f21a24;
+
   --amarillo: #979854;
   --amarilloClaro: #fffdc3;
   --azul: #1275d8;
   --azulClaro: #88c3ff;
-  --rojo: #ff2222;
   --rojoClaro: #ffa8a8;
   --verde: #04fb00;
   --verdeClaro: #bdff97;
@@ -32,15 +41,18 @@
   --padding-uno: 1rem;
   --padding-dos: 1.5rem;
 
-  --radioBorde-uno: 30px;
+  --radioBorde-uno: 15px;
 
   --tamañoPantalla-uno: 760px;
   --tamañoPantalla-dos: 870px;
   --tamañoPantalla-tres: 1080px;
+
+  --padding-left: 200px;
+  --padding-right: 200px;
 }
 @media (min-width: 1080px) {
-  :root {
+  /*   :root {
     padding-left: 200px;
     padding-right: 200px;
-  }
+  } */
 }

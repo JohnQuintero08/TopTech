@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-import { FaShoppingCart } from "react-icons/fa";
+import { BsCart4 } from "react-icons/bs";
 import "./estilosComponentes/barraNavegacion.css";
 import BotonGeneral from "./BotonGeneral";
-/* Problema con el formato del logo */
 import logo from "../imagenes/Logo_TopTech.JPG";
 
 export default function BarraNavegacion() {
@@ -27,7 +26,7 @@ export default function BarraNavegacion() {
             {/* Logo */}
           </NavLink>
           <BotonGeneral className="boton boton-icono">
-            <FaShoppingCart className="icono" />
+            <BsCart4 className="icono" />
           </BotonGeneral>
         </div>
         <div

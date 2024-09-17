@@ -1,8 +1,8 @@
 .boton {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border: none;
   font-size: 1rem;
-  border-radius: 30px;
+  border-radius: var(--radioBorde-uno);
   cursor: pointer;
 }
 .boton:active {
@@ -11,4 +11,21 @@
 .boton-icono {
   background-color: var(--white);
   padding: 0;
+}
+.boton-general {
+  border: 2px solid var(--blanco-uno);
+  background-color: var(--azul-tres);
+  color: var(--blanco-uno);
+  font-weight: bold;
+  width: 100%;
+}
+.boton-principal {
+  /* HACER QUE LOS BOTONES SE EXPANDAN EN EL CONTENEDOR COMPLETO */
+  padding: 1rem 2rem;
+  /* width: 210px; */
+}
+@media (min-width: 780px) {
+  .boton-principal {
+    width: 160px;
+  }
 }

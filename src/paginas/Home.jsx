@@ -1,27 +1,39 @@
 import React from "react";
 import Carrusel from "../componentes/Carrusel";
+import BotonGeneral from "../componentes/BotonGeneral";
 import TarjetasOferta from "../componentes/TarjetasOferta";
 import TarjetasServicios from "../componentes/TarjetasServicios";
 import BentoInformacion from "../componentes/BentoInformacion";
 import Footer from "../componentes/Footer";
 import data from "../data";
 import "./estilosPaginas/home.css";
+import "../componentes/estilosComponentes/botonGeneral.css";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
       <header>
         <h1>
-          Empresa lider en innovación y servicos de venta de productos para la
-          industria tecnologica.
+          Expertos en instrumentos de medida para redes de voz, imagen y datos y
+          metrología de telecomunicaciones.
         </h1>
-        <Carrusel
-          className="carousel-header"
-          arrayOfImages={data.carouselImages}
-        ></Carrusel>
+        <div className="contenedor-botones-header">
+          <NavLink to="tienda">
+            <BotonGeneral className="boton boton-general boton-principal">
+              Tienda
+            </BotonGeneral>
+          </NavLink>
+          <NavLink to="servicios">
+            <BotonGeneral className="boton boton-general boton-principal">
+              Servicios
+            </BotonGeneral>
+          </NavLink>
+        </div>
       </header>
 
       <section className="seccion-ofertas">
+        <Carrusel arrayOfImages={data.carouselImages}></Carrusel>
         <TarjetasOferta></TarjetasOferta>
       </section>
 

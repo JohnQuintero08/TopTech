@@ -8,16 +8,42 @@ footer {
 header {
   display: flex;
   flex-direction: column;
-  /*   border: 1px solid black; */
+  position: relative;
 }
+header::before {
+  background-color: var(--azul-cuatro);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../imagenes/Fondo_principal_unsplash.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-position: center;
+  opacity: 1; /* Ajusta la opacidad */
+  z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
 header h1 {
   margin: 7rem 0;
+  color: var(--blanco-uno);
+  /*   text-shadow: 10px 1px 1px black; */
 }
 .seccion-ofertas,
 .seccion-servicios,
 .seccion-informacion,
 footer {
-  padding-top: 7rem;
+  padding-top: 4rem;
+}
+.seccion-ofertas-carrusel {
+  margin-bottom: 1rem;
+}
+.contenedor-botones-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 760px) {
@@ -25,10 +51,21 @@ footer {
     margin: 5rem 0;
     font-size: 3rem;
   }
+  .contenedor-botones-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
 }
 @media (min-width: 1080px) {
   header h1 {
     margin: 6rem 0;
     font-size: 3rem;
+  }
+  header,
+  .seccion-ofertas {
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
   }
 }

@@ -49,21 +49,30 @@ const data = {
   carouselImages: [
     {
       id: "1",
+      titulo: "Equipos para instalacion de fibra optica",
+      contenido:
+        "Soluciones de fibra óptica, especialmente empalmadoras Coreanas de Fibra Óptica UCL-Swift",
       url: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "landscape 1",
     },
     {
       id: "2",
+      titulo: "",
+      contenido: "0,",
       url: "https://images.unsplash.com/photo-1639406077693-7eaf8c8befd2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "landscape 2",
     },
     {
       id: "3",
+      titulo: "",
+      contenido: "0,",
       url: "https://plus.unsplash.com/premium_photo-1666539895767-e6b131ca837a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "landscape 3",
     },
     {
       id: "4",
+      titulo: "",
+      contenido: "0,",
       url: "https://images.unsplash.com/photo-1543993585-74df873c60f2?q=80&w=1826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "landscape 4",
     },

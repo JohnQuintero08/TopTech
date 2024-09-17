@@ -15,16 +15,18 @@
 .contendor-opciones {
   flex-direction: column;
   gap: 1rem;
+  background-color: var(--azul-cuatro);
 }
 /* BOTONES */
 .link-activo {
-  background-color: var(--gris);
+  background-color: var(--azul-dos);
 }
 /* TEXTO */
 .link-navegacion {
   text-decoration: none;
-  color: var(--negro);
-  padding: 0.5rem 1rem;
+  color: var(--blanco-uno);
+  font-weight: bold;
+  padding: 0.7rem 1rem;
   border-radius: var(--radioBorde-uno);
 }
 /* ICONOS */
@@ -48,15 +50,28 @@
     gap: 2rem;
     /* border: 1px solid black; */
   }
+  .contendor-opciones {
+    background-color: var(--blanco-uno);
+  }
   .contenedor-opciones-cerrado {
     display: flex;
     height: max-content;
   }
   .link-activo {
-    background-color: var(--blanco);
+    background-color: var(--blanco-uno);
     text-decoration: underline;
   }
   .link-navegacion {
     padding: 0;
+    color: var(--negro);
+    font-weight: normal;
+  }
+}
+@media (min-width: 1080px) {
+  .contenedor-menu,
+  .contendor-opciones,
+  .contenedor-opciones-cerrado {
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
   }
 }
