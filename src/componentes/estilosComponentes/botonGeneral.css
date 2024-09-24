@@ -20,9 +20,11 @@
   width: 100%;
 }
 .boton-principal {
-  /* HACER QUE LOS BOTONES SE EXPANDAN EN EL CONTENEDOR COMPLETO */
   padding: 1rem 2rem;
-  /* width: 210px; */
+}
+.boton-oferta {
+  align-items: flex-end;
+  margin-top: auto;
 }
 @media (min-width: 780px) {
   .boton-principal {

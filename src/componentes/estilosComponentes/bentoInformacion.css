@@ -5,15 +5,18 @@
   grid-area: segn;
 }
 .item-ic {
+  background-color: var(--azul-dos);
   grid-area: terc;
 }
 .item-id {
   grid-area: cuar;
 }
 .item-ie {
+  background-color: var(--azul-cuatro);
   grid-area: quin;
 }
 .item-if {
+  background-color: var(--azul-dos);
   grid-area: sext;
 }
 .item-ig {
@@ -21,24 +24,31 @@
 }
 .contenedor-bento-informacion {
   display: grid;
-  grid-template-columns: 1fr 10% 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    "prim prim terc"
-    "segn segn terc"
-    "cuar cuar cuar"
-    "quin sext sext"
-    "sept sept sept";
+    "prim segn"
+    "terc segn"
+    "cuar cuar"
+    "quin sext";
   gap: 1rem;
 }
 @media (min-width: 760px) {
   .contenedor-bento-informacion {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "prim terc terc terc segn"
-      "cuar cuar quin sext sept";
+      "prim prim segn segn segn segn terc terc"
+      "cuar cuar cuar quin quin sext sext sext";
+    gap: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .contenedor-bento-informacion {
     gap: 2rem;
+  }
+  .contenedor-bento-informacion .tarjeta-titulo {
+    font-size: 2rem;
   }
 }

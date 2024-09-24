@@ -46,12 +46,8 @@ export default function Home() {
       </section>
 
       <section className="seccion-informacion">
-        <BentoInformacion></BentoInformacion>
+        <BentoInformacion informacion={data.logros}></BentoInformacion>
       </section>
-
-      <footer>
-        <Footer></Footer>
-      </footer>
     </>
   );
 }

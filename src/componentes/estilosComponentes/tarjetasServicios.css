@@ -1,17 +1,25 @@
-.contenedor-tarjetas-servicios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding-bottom: 2rem;
-  /*   border: 1px solid black; */
-}
 .contenedor-general-tarjeta-servicios {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 3rem;
 }
+.contenedor-tarjetas-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.contenedor-general-tarjeta-servicios h3 {
+  color: var(--blanco-uno);
+  padding: 0 3rem 2rem 3rem;
+  font-size: 2.5rem;
+}
+.navlink-boton-servicios {
+  padding: 0 3rem;
+  width: 100%;
+}
+
 @media (min-width: 550px) {
   .item-a {
     grid-area: prim;
@@ -31,24 +39,24 @@
   .item-f {
     grid-area: sext;
   }
+  .contenedor-general-tarjeta-servicios h3 {
+    grid-area: txto;
+  }
+  .navlink-boton-servicios {
+    grid-area: botn;
+  }
   .contenedor-tarjetas-servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .primera {
-    grid-template-areas:
-      "prim terc"
-      "segn terc";
-  }
-  .segunda {
-    grid-template-areas:
-      "cuar quin"
-      "cuar sext";
-  }
-}
-@media (min-width: 760px) {
-  .contenedor-tarjetas-servicios {
+    grid-area: cntn;
     gap: 2rem;
+  }
+  .contenedor-general-tarjeta-servicios {
+    display: grid;
+    /* border: 1px solid white; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      " . cntn"
+      "txto cntn"
+      "botn cntn";
   }
 }

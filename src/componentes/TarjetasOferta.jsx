@@ -7,23 +7,26 @@ import "./estilosComponentes/tarjetasOferta.css";
 
 export default function TarjetasOferta() {
   const tarjetas = data.ofertasImagenes.map((oferta) => {
+    const { id, url, textoBoton, to, titulo, descripcion } = oferta;
     return (
       <Tarjeta
-        key={oferta.id}
-        className="contenedor-tarjeta"
-        urlImagen={oferta.url}
-        contenidoDireccion={oferta.textoBoton}
-        direccion={oferta.to}
-        estiloBoton="boton"
+        key={id}
+        className="contenedor-tarjeta contenedor-tarjeta-oferta"
+        /* urlImagen={url} */
+        contenidoDireccion={textoBoton}
+        direccion={to}
+        estiloBoton="boton boton-general boton-oferta"
+        titulo={titulo}
+        children={descripcion}
       ></Tarjeta>
     );
   });
   return (
     <div className="contenedor-general-tarjetas-oferta">
       <div className="contenedor-tarjetas-oferta">{tarjetas}</div>
-      <NavLink to="tienda">
+      {/*       <NavLink to="tienda">
         <BotonGeneral className="boton">Visita nuestra tienda</BotonGeneral>
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 }

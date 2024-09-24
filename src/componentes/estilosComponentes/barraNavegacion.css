@@ -67,7 +67,7 @@
     font-weight: normal;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1200px) {
   .contenedor-menu,
   .contendor-opciones,
   .contenedor-opciones-cerrado {

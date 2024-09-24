@@ -80,6 +80,8 @@ const data = {
   ofertasImagenes: [
     {
       id: "1",
+      titulo: "30% descuento",
+      descripcion: "En servicios de metrología en Septiembre",
       url: "https://img.freepik.com/foto-gratis/venta-descuento-especial-gafas-vr_23-2150040388.jpg",
       alt: "oferta 1",
       to: "",
@@ -87,17 +89,21 @@ const data = {
     },
     {
       id: "2",
+      titulo: "Nuevos productos",
+      descripcion: "",
       url: "https://img.freepik.com/vector-gratis/lunes-cibernetico-diseno-plano_23-2148321342.jpg?size=338&ext=jpg",
       alt: "oferta 2",
       to: "",
-      textoBoton: "Ver mas",
+      textoBoton: "Tienda",
     },
     {
       id: "3",
+      titulo: "Descuentos en:",
+      descripcion: "Receptor de comunicaciones y muchos más",
       url: "https://img.freepik.com/vector-gratis/fondo-tecnologia-ofertas-descuentos-cyber-monday_1017-40845.jpg",
       alt: "oferta 3",
       to: "",
-      textoBoton: "Ver mas",
+      textoBoton: "Tienda",
     },
   ],
   servicios: [
@@ -139,6 +145,50 @@ const data = {
       titulo: "Automatización de Procesos",
       descripcion:
         "Optimización de flujos de trabajo mediante herramientas tecnológicas.",
+    },
+  ],
+  logros: [
+    {
+      id: 1,
+      highlight: "+ 20 Años",
+      complemento: "de experiencia",
+      clase: "item-ia",
+    },
+    {
+      id: 2,
+      highlight: "+2600 certificados",
+      complemento: "de calibración expedidos",
+      clase: "item-ib",
+    },
+    {
+      id: 3,
+      highlight: "Certificación",
+      complemento: "ISO 1020",
+      clase: "item-ic",
+    },
+    {
+      id: 4,
+      highlight: "+ 1000 fusionadoras",
+      complemento: "ajustadas y reparadas",
+      clase: "item-id",
+    },
+    {
+      id: 5,
+      highlight: "Innovación",
+      complemento: "en equipos de OTD",
+      clase: "item-ie",
+    },
+    {
+      id: 6,
+      highlight: "+6000 servicios",
+      complemento: "técnicos realizados",
+      clase: "item-if",
+    },
+    {
+      id: 7,
+      highlight: "Patentes innovadoras en tecnología de automatización.",
+      complemento: "",
+      clase: "item-ig",
     },
   ],
 };

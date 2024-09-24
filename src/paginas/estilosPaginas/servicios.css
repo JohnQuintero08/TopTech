@@ -1,0 +1,11 @@
+.contenedor-pagina-servicios {
+}
+.contenedor-header-pagina-servicios {
+  padding: 7rem var(--padding-uno);
+  background-image: url(../../imagenes/Fondo_servicios.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.contenedor-header-pagina-servicios h2 {
+  color: var(--blanco-uno);
+}

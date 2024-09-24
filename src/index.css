@@ -38,7 +38,7 @@
   --gris: #d7d7d7;
   --negro: #010911;
 
-  --padding-uno: 1rem;
+  --padding-uno: 2rem;
   --padding-dos: 1.5rem;
 
   --radioBorde-uno: 15px;
@@ -49,6 +49,11 @@
 
   --padding-left: 200px;
   --padding-right: 200px;
+
+  /* TAMAÑO DE LETRA
+     Titulo principal: 1rem
+     Titulos secundario: 1.5
+  */
 }
 @media (min-width: 1080px) {
   /*   :root {

@@ -12,14 +12,15 @@
 }
 .contenedor-footer-legal {
   justify-content: center;
-  margin-top: 1rem;
+  margin: 1rem 0 2rem 0;
   gap: 1rem;
   width: 100%;
 }
 /* ANCHOR TAGS */
 .contenedor-footer-legal a {
   cursor: pointer;
-  font-size: 0.7rem;
+  text-align: center;
+  font-size: 0.6rem;
   /* border: 1px solid black; */
 }
 /* IMAGENES */
@@ -40,5 +41,11 @@
     gap: 3rem;
     justify-content: flex-start;
     width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-footer {
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
   }
 }

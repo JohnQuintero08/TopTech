@@ -15,13 +15,15 @@ export default function Tarjeta({
 }) {
   return (
     <div className={className}>
-      {urlImagen && <img src={urlImagen} alt={alt} />}
       <p className="tarjeta-titulo">{titulo}</p>
       <p className="tarjeta-contenido">{children}</p>
+      {urlImagen && <img src={urlImagen} alt={alt} />}
       {estiloBoton && (
-        <BotonGeneral className={`${estiloBoton} boton-tarjeta`}>
-          <NavLink to={direccion}>{contenidoDireccion}</NavLink>
-        </BotonGeneral>
+        <NavLink to={direccion}>
+          <BotonGeneral className={`${estiloBoton} boton-tarjeta boton-oferta`}>
+            {contenidoDireccion}
+          </BotonGeneral>
+        </NavLink>
       )}
     </div>
   );

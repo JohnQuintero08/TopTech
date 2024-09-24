@@ -2,12 +2,15 @@ import React from "react";
 import Footer from "../componentes/Footer";
 import TarjetasServicios from "../componentes/TarjetasServicios";
 import data from "../data";
+import "./estilosPaginas/servicios.css";
 
 export default function Servicios() {
   return (
-    <>
-      <section>
-        <h2>Ofrecemos servicios se calibración y otros</h2>
+    <div className="contenedor-pagina-servicios">
+      <section className="contenedor-header-pagina-servicios">
+        <h2>
+          Servicios de metrología y mantenimiento de equipos de fibra óptica
+        </h2>
       </section>
       <section>
         <TarjetasServicios
@@ -23,7 +26,6 @@ export default function Servicios() {
           claseServicios="segunda"
         ></TarjetasServicios>
       </section>
-      <Footer></Footer>
-    </>
+    </div>
   );
 }

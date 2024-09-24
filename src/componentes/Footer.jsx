@@ -6,11 +6,13 @@ import logo from "../imagenes/Logo_TopTech.JPG";
 
 export default function Footer() {
   return (
-    <div className="contenedor-footer">
+    <footer className="contenedor-footer">
       <div className="contenedor-footer-contacto">
         <img className="logo-footer-toptech" src={logo} alt="Logo TopTech" />
         <NavLink to="/contacto">
-          <BotonGeneral className="boton">Contactanos</BotonGeneral>
+          <BotonGeneral className="boton boton-principal boton-general">
+            Contactanos
+          </BotonGeneral>
         </NavLink>
       </div>
       <div className="contenedor-footer-legal">
@@ -19,6 +21,6 @@ export default function Footer() {
         <a>PQR's</a>
         <a>Política de privacidad</a>
       </div>
-    </div>
+    </footer>
   );
 }

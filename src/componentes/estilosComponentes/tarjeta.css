@@ -7,46 +7,69 @@
   position: relative;
 }
 .contenedor-tarjeta,
-.contenedor-tarjeta img,
 .contenedor-tarjeta-servicio,
 .contendor-tarjeta-bento {
   border-radius: var(--radioBorde-uno);
 }
+/* IMAGENES */
 .contenedor-tarjeta img {
-  width: 100%;
+  /*   Codigo para que la imagen este en el fondo de la tarjeta
+width: 100%;
   height: 200px;
   position: absolute;
-  z-index: -1;
+  z-index: -1; */
+  width: 50%;
 }
-.contenedor-tarjeta .boton-tarjeta {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+/* TARJETA DE OFERTAS */
+.contenedor-tarjeta-oferta {
+  background-color: var(--azul-tres);
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-
 /* TARJETA DE SERVICIO */
 .contenedor-tarjeta-servicio {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--gris);
-  padding: 1.2rem 1.5rem;
+  background: var(--azul-tres);
+  opacity: 0.9;
+  padding: 1.5rem 3rem;
   gap: 2rem;
 }
-.contenedor-tarjeta-servicio .tarjeta-titulo {
-  font-size: 1.5rem;
-}
-
 /* TARJETA BENTO */
 .contendor-tarjeta-bento {
   width: 100%;
-  padding: 1.2rem 1.5rem;
+  padding: 1.5rem 0.5rem;
   font-size: 1rem;
-  border: 2px solid var(--gris);
+  background-color: var(--azul-tres);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* TEXTO */
+.tarjeta-titulo,
+.tarjeta-contenido {
+  color: var(--blanco-uno);
+}
+.tarjeta-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.tarjeta-contenido {
+  font-size: 0.9rem;
+}
+.contendor-tarjeta-bento .tarjeta-titulo {
+  font-size: 1.5rem;
+}
+.contenedor-tarjeta-oferta .tarjeta-contenido {
+  align-self: flex-start;
 }
 @media (min-width: 1080px) {
   .contendor-tarjeta-bento {
