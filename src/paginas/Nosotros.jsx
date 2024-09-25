@@ -5,7 +5,6 @@ export default function Nosotros() {
   return (
     <>
       <p>Nosotros aqui</p>
-      <Footer></Footer>
     </>
   );
 }

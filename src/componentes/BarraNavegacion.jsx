@@ -38,7 +38,15 @@ export default function BarraNavegacion() {
             className={({ isActive }) =>
               "link-navegacion " + (isActive ? " link-activo" : null)
             }
-            to="tienda"
+            to="/"
+          >
+            Inicio
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              "link-navegacion " + (isActive ? " link-activo" : null)
+            }
+            to="marcas"
           >
             Marcas
           </NavLink>
@@ -64,7 +72,7 @@ export default function BarraNavegacion() {
             }
             to="nosotros"
           >
-            Sobre Nosotros
+            Sobre nosotros
           </NavLink>
           <NavLink
             className={({ isActive }) =>

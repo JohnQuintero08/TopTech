@@ -19,7 +19,8 @@
   font-weight: bold;
   width: 100%;
 }
-.boton-principal {
+.boton-principal,
+.boton-asesor {
   padding: 1rem 2rem;
 }
 .boton-oferta {

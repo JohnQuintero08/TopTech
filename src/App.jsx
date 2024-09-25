@@ -5,6 +5,7 @@ import Servicios from "./paginas/Servicios";
 import Tienda from "./paginas/Tienda";
 import Nosotros from "./paginas/Nosotros";
 import Contacto from "./paginas/Contacto";
+import Marcas from "./paginas/Marcas";
 
 import "./App.css";
 
@@ -14,8 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="servicios" element={<Servicios />} />
+          <Route path="marcas" element={<Marcas />} />
           <Route path="tienda" element={<Tienda />} />
+          <Route path="servicios" element={<Servicios />} />
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="contacto" element={<Contacto />} />
         </Route>

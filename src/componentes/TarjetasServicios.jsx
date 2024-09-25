@@ -23,13 +23,17 @@ export default function TarjetasServicios({
   });
   return (
     <div className="contenedor-general-tarjeta-servicios">
-      <h3>Conozca todos nuestros servicios</h3>
+      <h3>
+        Conozca todos <br /> nuestros <br /> servicios
+      </h3>
       <div className={`contenedor-tarjetas-servicios ${claseServicios}`}>
         {tarjetas}
       </div>
       {hasBoton && (
         <NavLink className="navlink-boton-servicios" to="servicios">
-          <BotonGeneral className="boton boton-general">Servicios</BotonGeneral>
+          <BotonGeneral className="boton boton-general boton-principal">
+            Servicios
+          </BotonGeneral>
         </NavLink>
       )}
     </div>

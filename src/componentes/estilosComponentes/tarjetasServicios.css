@@ -40,10 +40,15 @@
     grid-area: sext;
   }
   .contenedor-general-tarjeta-servicios h3 {
+    padding: 0;
     grid-area: txto;
+    font-size: 3rem;
   }
   .navlink-boton-servicios {
+    padding: 0;
     grid-area: botn;
+    align-self: flex-start;
+    justify-self: flex-start;
   }
   .contenedor-tarjetas-servicios {
     grid-area: cntn;
@@ -55,8 +60,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-      " . cntn"
+      "  .  cntn"
       "txto cntn"
       "botn cntn";
+    /*     justify-items: start;
+    align-items: start; */
   }
 }

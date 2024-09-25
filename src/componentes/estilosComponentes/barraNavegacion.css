@@ -59,12 +59,14 @@
   }
   .link-activo {
     background-color: var(--blanco-uno);
-    text-decoration: underline;
+    border-radius: 0;
+    border-bottom: 2px solid var(--azul-cuatro);
   }
   .link-navegacion {
     padding: 0;
     color: var(--negro);
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {

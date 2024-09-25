@@ -5,7 +5,6 @@ export default function Contacto() {
   return (
     <>
       <p>Contacto aqui</p>
-      <Footer></Footer>
     </>
   );
 }
