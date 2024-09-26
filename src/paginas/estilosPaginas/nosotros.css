@@ -1,0 +1,67 @@
+.contenedor-nosotros-informacion,
+.contenedor-nosotros-secundario {
+  padding: 5rem var(--padding-uno);
+}
+.contenedor-nosotros-informacion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url(../../imagenes/Fondo_servicios.jpg);
+  /* background-size: cover; */
+  background-position: left;
+  color: var(--blanco-uno);
+}
+.contenedor-nosotros-secundario,
+.contenedor-nosotros-texto-secundario {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contenedor-nosotros-imagenes {
+  position: relative;
+  padding-bottom: 10rem;
+}
+/* IMAGENES */
+.nosotros-imagen-uno,
+.nosotros-imagen-dos {
+  max-width: 500px;
+}
+.nosotros-imagen-uno {
+  width: 80%;
+}
+.nosotros-imagen-dos {
+  width: 80%;
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+}
+/* TEXTO */
+.contenedor-nosotros-informacion h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.contenedor-nosotros-secundario h3,
+.contenedor-nosotros-informacion h3 {
+  font-size: 1.5rem;
+}
+.contenedor-nosotros-informacion p {
+  text-shadow: 1px 1px 10px black;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 760px) {
+  .contenedor-nosotros-secundario {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-nosotros-informacion,
+  .contenedor-nosotros-secundario {
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+  }
+  .contenedor-nosotros-informacion p {
+    max-width: 40%;
+  }
+}

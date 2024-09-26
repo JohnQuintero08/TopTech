@@ -26,7 +26,7 @@
 .contenedor-servicios-clientes {
   background: url(../../imagenes/Fondo_servicios.jpg);
   background: cover;
-  padding: 3rem 0;
+  padding: 3rem var(--padding-uno);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -36,6 +36,7 @@
 .contenedor-servicios-clientes ul {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 /* TEXTO */
 .contenedor-header-pagina-servicios h2,
