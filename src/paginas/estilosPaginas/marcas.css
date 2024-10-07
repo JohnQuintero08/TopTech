@@ -1,0 +1,28 @@
+.contenedor-marcas {
+  padding: 3rem var(--padding-uno);
+}
+.contenedor-marcas-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.link-contenedor-tarjeta-marca {
+  text-decoration: none;
+}
+/* TEXTO*/
+.contenedor-marcas h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+@media (min-width: 1200px) {
+  .contenedor-marcas {
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+  }
+  .contenedor-marcas-tarjetas {
+    gap: 1.5rem;
+  }
+  .contenedor-marcas h2 {
+    font-size: 3rem;
+  }
+}

@@ -64,4 +64,7 @@
   .contenedor-nosotros-informacion p {
     max-width: 40%;
   }
+  .contenedor-nosotros-informacion h2 {
+    font-size: 3rem;
+  }
 }

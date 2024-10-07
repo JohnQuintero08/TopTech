@@ -191,6 +191,33 @@ const data = {
       clase: "item-ig",
     },
   ],
+  marcas: [
+    {
+      id: 1,
+      nombreMarca: "marca 1",
+      logo: "logo1.png",
+    },
+    {
+      id: 2,
+      nombreMarca: "marca 2",
+      logo: "logo2.png",
+    },
+    {
+      id: 3,
+      nombreMarca: "marca 3",
+      logo: "logo3.png",
+    },
+    {
+      id: 4,
+      nombreMarca: "marca 4",
+      logo: "logo4.png",
+    },
+    {
+      id: 5,
+      nombreMarca: "marca 5",
+      logo: "logo5.png",
+    },
+  ],
 };
 
 export default data;

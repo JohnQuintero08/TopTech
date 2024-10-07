@@ -52,7 +52,19 @@ width: 100%;
   justify-content: center;
   text-align: center;
 }
-
+/* TARJETA MARCA */
+.contenedor-tarjeta-marca {
+  background-color: var(--azul-tres);
+  padding: 1rem;
+  color: var(--negro);
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radioBorde-uno);
+}
+.contenedor-tarjeta-marca:hover {
+  background-color: var(--azul-dos);
+  transition: ease 0.5s;
+}
 /* TEXTO */
 .tarjeta-titulo,
 .tarjeta-contenido {
@@ -79,5 +91,9 @@ width: 100%;
   }
   .contenedor-tarjeta-servicio {
     padding: 3rem;
+  }
+  .contenedor-tarjeta-marca {
+    width: 260px;
+    height: 260px;
   }
 }
