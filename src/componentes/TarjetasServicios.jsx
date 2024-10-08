@@ -1,6 +1,6 @@
 import React from "react";
 import Tarjeta from "./Tarjeta";
-import "./estilosComponentes/TarjetasServicios.css";
+import "./estilosComponentes/tarjetasServicios.css";
 import BotonGeneral from "./BotonGeneral";
 import { NavLink } from "react-router-dom";
 
